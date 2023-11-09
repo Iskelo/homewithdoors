@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+img{
+	width: 100%;
+	display: block;
+}
+.container{
+	position: relative;
+	background-image: url(/images/home.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100vw;
+	height: 100vh;
+}
+.box{
+	position: absolute;
+	width: 117px;
+	top: 297px;
+	left: 528px;
+	z-index: -5;
+}
+.door{
+	/* display: none; */
+	position: absolute;
+	width: 117px;
+	top: 297px;
+	left: 528px;
+
+	transform-origin: left;
+	/*Speed of the Door animation*/
+	transition: all 0.5s ease-in-out;
+}
+
+.doorOpen{
+	/* background-color: brown; */
+	transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+	
+}
+.home{}
