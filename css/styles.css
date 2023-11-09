@@ -4,17 +4,24 @@ body{
 }
 
 img{
-	width: 100%;
-	display: block;
+	/* width: 100%; */
+	/* display: block; */
 }
 .container{
 	position: relative;
-	background-image: url(/images/home.png);
-	background-size: cover;
+	background-image: url(/images/home-1200.png);
+	background-size:unset;
 	background-repeat: no-repeat;
 	background-position: center;
 	width: 100vw;
 	height: 100vh;
+}
+
+@media screen and (max-width: 768px) {
+	.container{
+		background-image: url(/images/home-768.png);
+	}
+
 }
 .box{
 	position: absolute;
@@ -26,10 +33,11 @@ img{
 .door{
 	/* display: none; */
 	position: absolute;
-	width: 117px;
-	top: 297px;
-	left: 528px;
+	width: 7%;
+	top: 32.3%;
+	left: 31.4%;
 
+	/* transform-origin: top; */
 	transform-origin: left;
 	/*Speed of the Door animation*/
 	transition: all 0.5s ease-in-out;
@@ -38,6 +46,7 @@ img{
 .doorOpen{
 	/* background-color: brown; */
 	transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+	/* transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateX(105deg); */
 	
 }
 .home{}
