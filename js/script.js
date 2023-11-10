@@ -16,16 +16,3 @@ function getDirection(index) {
   }
 }
 
-// elements.forEach(element => {  
-//   element.addEventListener("click", ()=>{
-//     element.classList.toggle("doorOpenLeft");
-//   });
-// });
-
-//  console.log(elements)
-// for (let i = 0; i < elements.length; i++) {
-//   // const element = elements[i];
- 
-//   elements[i]
-// }
-

@@ -2,44 +2,43 @@ body{
 	margin: 0;
 	padding: 0;
 	font-size: 16px;
+	/* background-image: url('../images/home-bg-1200.png'); */
+	/* background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat; */
+	/* width: 100vw;
+	height: 100vh;
+	display: flex; */
+	width: 100vw;
+	height: 100vh;
 }
 
-img{
-	max-width: 100%;
-	
+/* img{
+	max-width: 100%;	
 	display: block;
 	height: auto;
-}
+} */
 
 
 .container {
 	position: relative;
 	margin: 0;
-	background-image: url('../images/home-bg.png');
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat; 
-	max-width: 100%;
-	height: 100vh;
+	/* background-image: url('../images/home-bg-1200.png'); */
+	/* background-attachment: fixed; */
+	/* background-size: 100%; */
+	/* background-position: center; */
+	/* background-repeat: no-repeat;  */
+	width: 100%;
+	height: 100%;
  }
 
+ .home{
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+ }
 
- /* @media screen and (max-width: 1200px) {
-	.container::before{
-		background-image: url('/images/home-bg-1200.png');
-	}
- }
- @media screen and (max-width: 768px) {
-	.container::before{
-		background-image: url('/images/home-bg-768.png');
-	}
- }
- @media screen and (max-width: 480px) {
-	.container::before{
-		background-image: url('/images/home-bg-480.png');
-	}
- } */
 .doors{
 	position: absolute;
 	display: flex;
@@ -47,22 +46,21 @@ img{
 	top: 32.5%;
 	left: 31.4%;
 	width: 36.6%;
-	height: 15%;
-	/* background-color: #fff; */
+	height: 132px;
 }
 
-@media screen and (max-width: 991px) {
-	.doors{
-		top: 35.5%;
-		height: 12%;
-	}
-}
-@media screen and (max-width: 768px) {
-	.doors{
-		left: 26%;
-		width: 47%;
-	}
-}
+/* .doors{
+	position: absolute;
+	top: 42%;
+	left: 49.8%;
+	transform: translate(-50%, -50%);
+	background-color: yellow;
+	width: 430px;
+	height: 96px;
+	display: flex;
+	gap: 5px;
+} */
+
 
 .door{
 	cursor: pointer;
