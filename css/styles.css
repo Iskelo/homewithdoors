@@ -15,7 +15,7 @@ img{
 .container {
 	position: relative;
 	margin: 0;
-	background-image: url('/images/home-bg.png');
+	background-image: url('../images/home-bg.png');
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: center;
@@ -70,7 +70,7 @@ img{
 }
 
 .door1{	
-	background-image: url('/images/door1-1200.png');	
+	background-image: url('../images/door1-1200.png');	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat; 
@@ -82,7 +82,7 @@ img{
 }
 
 .door2{	
-	background-image: url('/images/door2-1200.png');	
+	background-image: url('../images/door2-1200.png');	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat; 
@@ -94,7 +94,7 @@ img{
 }
 
 .door3{	
-	background-image: url('/images/door3-1200.png');	
+	background-image: url('../images/door3-1200.png');	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat; 
@@ -106,7 +106,7 @@ img{
 }
 
 .door4{	
-	background-image: url('/images/door4-1200.png');	
+	background-image: url('../images/door4-1200.png');	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat; 
@@ -118,7 +118,7 @@ img{
 }
 
 .door5{	
-	background-image: url('/images/door5-1200.png');	
+	background-image: url('../images/door5-1200.png');	
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat; 
