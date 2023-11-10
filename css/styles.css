@@ -17,7 +17,7 @@ img{
 	margin: 0;
 	background-image: url('/images/home-bg.png');
 	background-attachment: fixed;
-	/* background-size: cover; */
+	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat; 
 	max-width: 100%;
@@ -25,7 +25,7 @@ img{
  }
 
 
- @media screen and (max-width: 1200px) {
+ /* @media screen and (max-width: 1200px) {
 	.container::before{
 		background-image: url('/images/home-bg-1200.png');
 	}
@@ -39,7 +39,7 @@ img{
 	.container::before{
 		background-image: url('/images/home-bg-480.png');
 	}
- }
+ } */
 .doors{
 	position: absolute;
 	display: flex;
@@ -50,7 +50,22 @@ img{
 	height: 15%;
 	/* background-color: #fff; */
 }
+
+@media screen and (max-width: 991px) {
+	.doors{
+		top: 35.5%;
+		height: 12%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.doors{
+		left: 26%;
+		width: 47%;
+	}
+}
+
 .door{
+	cursor: pointer;
 	box-shadow: 0px 2px 5px yellow;
 }
 
