@@ -10,84 +10,110 @@ img{
 	display: block;
 	height: auto;
 }
-/* .container{
-	position: relative;
-	background-image: url(/images/home-bg.png);
-	background-attachment: fixed;
-	background-size:unset;
-	background-position: center;
-	margin: 0;
-	max-width: 100%;
-	height: 100vh;
-} */
+
 
 .container {
 	position: relative;
 	margin: 0;
-	max-width: 100%;
-	height: 100vh;
- }
- 
- .container::before {
-	content: "";
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
 	background-image: url('/images/home-bg.png');
 	background-attachment: fixed;
 	/* background-size: cover; */
 	background-position: center;
-	z-index: -1;
+	background-repeat: no-repeat; 
+	max-width: 100%;
+	height: 100vh;
  }
 
+
+ @media screen and (max-width: 1200px) {
+	.container::before{
+		background-image: url('/images/home-bg-1200.png');
+	}
+ }
+ @media screen and (max-width: 768px) {
+	.container::before{
+		background-image: url('/images/home-bg-768.png');
+	}
+ }
+ @media screen and (max-width: 480px) {
+	.container::before{
+		background-image: url('/images/home-bg-480.png');
+	}
+ }
+.doors{
+	position: absolute;
+	display: flex;
+	gap: 1.4%;
+	top: 32.5%;
+	left: 31.4%;
+	width: 36.6%;
+	height: 15%;
+	/* background-color: #fff; */
+}
 .door{
 	box-shadow: 0px 2px 5px yellow;
 }
+
 .door1{	
-	position: absolute;	
-	top: 35.3%;
-	left: 34.5%;
-	transform-origin: left;
-	/*Speed of the Door animation*/
-	transition: all 0.5s ease-in-out;
+	background-image: url('/images/door1-1200.png');	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+	width: 19%;
+	height: 100%;
+
+	transform-origin: left;	
+	transition: all 0.3s ease-in-out;
 }
+
 .door2{	
-	position: absolute;	
-	top: 35.3%;
-	left: 40.8%;
-	transform-origin: right;
-	/*Speed of the Door animation*/
-	transition: all 0.5s ease-in-out;
-	transform-style: preserve-3d;
-	z-index: 2;
+	background-image: url('/images/door2-1200.png');	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+	width: 19%;
+	height: 100%;
+
+	transform-origin: right;	
+	transition: all 0.3s ease-in-out;
 }
+
 .door3{	
-	position: absolute;	
-	top: 35.3%;
-	left: 46.9%;	
-	transform-origin: top;
-	/*Speed of the Door animation*/
-	transition: all 0.5s ease-in-out;
+	background-image: url('/images/door3-1200.png');	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+	width: 19%;
+	height: 100%;
+
+	transform-origin: top;	
+	transition: all 0.3s ease-in-out;
 }
+
 .door4{	
-	position: absolute;	
-	top: 35.3%;
-	left: 53%;
-	transform-origin: bottom;
-	/*Speed of the Door animation*/
-	transition: all 0.5s ease-in-out;
+	background-image: url('/images/door4-1200.png');	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+	width: 19%;
+	height: 100%;
+
+	transform-origin: bottom;	
+	transition: all 0.3s ease-in-out;
 }
+
 .door5{	
-	position: absolute;	
-	top: 35.3%;
-	left: 59.2%;
-	/* transform-origin: top; */
-	transform-origin: right;
-	/*Speed of the Door animation*/
-	transition: all 0.5s ease-in-out;	
+	background-image: url('/images/door5-1200.png');	
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat; 
+	width: 19%;
+	height: 100%;
+
+	transform-origin: right;	
+	transition: all 0.3s ease-in-out;
 }
+
 
 .doorOpenLeft{		
 	transform: perspective(1200px) rotate3d(0, 1, 0, -105deg);	
