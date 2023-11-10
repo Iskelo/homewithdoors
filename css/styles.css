@@ -76,7 +76,7 @@ body{
 	height: 100%;
 
 	transform-origin: left;	
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .door2{	
@@ -88,7 +88,7 @@ body{
 	height: 100%;
 
 	transform-origin: right;	
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .door3{	
@@ -100,7 +100,7 @@ body{
 	height: 100%;
 
 	transform-origin: top;	
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .door4{	
@@ -112,7 +112,7 @@ body{
 	height: 100%;
 
 	transform-origin: bottom;	
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 .door5{	
@@ -124,20 +124,28 @@ body{
 	height: 100%;
 
 	transform-origin: right;	
-	transition: all 0.3s ease-in-out;
+	transition: all 0.2s ease-in-out;
 }
 
 
-.doorOpenLeft{		
+.doorOpenLeft{
+	background-image: none;
+	background-color: rgb(61, 59, 59);
 	transform: perspective(1200px) rotate3d(0, 1, 0, -105deg);	
 }
-.doorOpenRight{		
+.doorOpenRight{
+	background-image: none;
+	background-color: rgb(61, 59, 59);		
 	transform: perspective(1200px) rotate3d(0, 1, 0, 105deg);
 }
-.doorOpenTop{	
+.doorOpenTop{
+	background-image: none;
+	background-color: rgb(61, 59, 59);	
 	transform: perspective(1200px) rotate3d(1, 0, 0, 105deg);
 }
 .doorOpenBottom{
+	background-image: none;
+	background-color: rgb(61, 59, 59);
 	transform: perspective(1200px) rotate3d(1, 0, 0, -105deg);
 }
 .home{
