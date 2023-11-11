@@ -1,3 +1,4 @@
+'use strict'; 
 const elements = document.querySelectorAll(".door");
 
 elements.forEach((element, index) => {
