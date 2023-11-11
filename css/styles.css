@@ -111,17 +111,17 @@ body{
 }
 .doorOpenRight{
 	background-image: none;
-	background-color: rgb(61, 59, 59);		
+	background-color: rgb(43, 65, 45);		
 	transform: perspective(1200px) rotate3d(0, 1, 0, 105deg);
 }
 .doorOpenTop{
 	background-image: none;
-	background-color: rgb(61, 59, 59);	
+	background-color: rgb(43, 65, 45);	
 	transform: perspective(1200px) rotate3d(1, 0, 0, 105deg);
 }
 .doorOpenBottom{
 	background-image: none;
-	background-color: rgb(61, 59, 59);
+	background-color: rgb(43, 65, 45);
 	transform: perspective(1200px) rotate3d(1, 0, 0, -105deg);
 }
 .home{
