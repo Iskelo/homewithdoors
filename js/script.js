@@ -8,7 +8,7 @@ elements.forEach((element, index) => {
     const isOpen = element.classList.contains(`doorOpen${direction}`);
     closeAllDoors();
     if (!isOpen) {
-      element.classList.add(`doorOpen${direction}`);      
+      element.classList.add(`doorOpen${direction}`);
     } else {
       closeAllDoors();
     }

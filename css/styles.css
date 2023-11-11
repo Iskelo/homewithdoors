@@ -6,8 +6,6 @@ body{
 	min-height: 100vh;
 }
 
-
-
 .container {
 	position: relative;
 	margin: 0;
@@ -36,11 +34,8 @@ body{
 	height: 12%;
 }
 
-
-
 .door{
-	cursor: pointer;
-	box-shadow: 0px 2px 5px yellow;
+	cursor: pointer;	
 }
 
 .door1{	
@@ -102,7 +97,6 @@ body{
 	transform-origin: right;	
 	transition: all 0.2s ease-in-out;
 }
-
 
 .doorOpenLeft{
 	background-image: none;
