@@ -2,18 +2,21 @@
 const elements = document.querySelectorAll(".door");
 
 elements.forEach((element, index) => {
-  element.addEventListener("click", () => {
-    
+  element.addEventListener("click", (event) => {
+    event.stopPropagation(); 
     const direction = getDirection(index);
     const isOpen = element.classList.contains(`doorOpen${direction}`);
     closeAllDoors();
     if (!isOpen) {
       element.classList.add(`doorOpen${direction}`);
-    } else {
-      closeAllDoors();
     }
-    
   });
+});
+
+document.addEventListener("click", (event) => {  
+  if (!event.target.closest(".door")) {
+    closeAllDoors();
+  }
 });
 
 function getDirection(index) {
