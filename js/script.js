@@ -2,7 +2,7 @@
 const elements = document.querySelectorAll(".door");
 
 elements.forEach((element, index) => {
-  element.addEventListener("click", (event) => {
+  element.addEventListener("mouseenter", (event) => {
     event.stopPropagation(); 
     const direction = getDirection(index);
     const isOpen = element.classList.contains(`doorOpen${direction}`);
@@ -11,6 +11,9 @@ elements.forEach((element, index) => {
       element.classList.add(`doorOpen${direction}`);
     }
   });
+  // element.addEventListener("mouseleave", () => {
+  //   closeAllDoors();
+  // });
 });
 
 document.addEventListener("click", (event) => {  
