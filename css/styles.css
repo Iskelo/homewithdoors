@@ -12,7 +12,7 @@ body{
 	width: 100%;
 	height: 0;
 	padding-bottom: 85%;
-	background-image: url('../images/bg.jpg');
+	background-image: url('../images/bg-screen.png');
 	background-size: cover;
 	background-position: bottom;
 	z-index: 1;
@@ -117,27 +117,28 @@ body{
 
 .box-container{
 	position: absolute;
-	left: 49.6%;
-	top: 42.8%;
+	left: 50.5%;
+	top: 53.8%;
 	transform: translate(-50%, -50%);	
-	width: 51%;
-	height: 43.7%;
+	width: 58.6%;
+	height: 50%;
 /* background-color: rgba(0, 0, 0, .5); */
 }
 .boxes {
 	display: grid;
 	grid-template-columns: repeat(7, 1fr);
-	grid-template-rows: 19% 22% 26% 1fr;
-	grid-column-gap: 1%;
-	grid-row-gap: 2%;
+	grid-template-rows: 19.7% 22.7% 26.2% 1fr;
+	grid-column-gap: 0.5%;
+	grid-row-gap: 1.5%;
 	height: 100%;
 }
-.box {
-	background-color: rgb(99, 102, 97);	
+.box {	
 	cursor: pointer;
 	transition: all 0.5s ease-in-out;
-	display: flex;
-	text-align: center;	
+
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;	
 }
 
 .number{	
@@ -148,16 +149,14 @@ body{
 	line-height: normal;
 	width: 100%;
 }
-.box-13 {	
-	background-size: cover;
-	background-position: center;
-	background-repeat: no-repeat; 
-	grid-area: 1 / 3 / 2 / 4;	
-	background-image: url('../images/door1-1200.png');
+.box-13 {		
+	background-image: url('../images/door\ 13.png');
 
+	grid-area: 1 / 3 / 2 / 4;
 	transform-origin: left;
 }
 .box-18 {
+	background-image: url('../');
 	transform-origin: right;
 	grid-area: 1 / 4 / 2 / 5;
 	
