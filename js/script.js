@@ -56,3 +56,7 @@ function closeAllDoors() {
     element.classList.remove(`doorOpen${direction}`);
   });
 }
+
+function redirectToAnotherPage() {    
+    window.location.href = "../index.html";
+}
