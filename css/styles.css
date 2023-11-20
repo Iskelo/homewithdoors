@@ -247,66 +247,68 @@ body{
 		margin: 0;
 		width: 100%;
 		height: 0;
-		padding-bottom: 150%;
+		/* padding-bottom: 150%; */
+		padding-bottom: 180%;
 		background: url('../images/bg-mobile.png'), rgb(78, 119, 81);
 		background-size: cover;
+		background-repeat: no-repeat;
 		background-position: center;
 		z-index: 1;
 	}
 	.box-container{
 		position: absolute;
 		left: 49.5%;
-		top: 57.5%;
+		top: 57.2%;
 		transform: translate(-50%, -50%);
-		width: 75.7%;
-		height: 37%;
+		width: 87%;
+		height: 36%;
 	}
 	.box-1 {
-		width: 6%;
-		height: 4%;
-		top: 21.6%;
-		left: 31%;
+		width: 6.9%;
+		height: 3.8%;
+		top: 22.5%;
+		left: 28%;
 	}
 	.box-11 {
-		width: 5.2%;
-		height: 4.1%;
-		top: 26.6%;
-		left: 69%;
+		width: 5.9%;
+		height: 3.7%;
+		top: 27.5%;
+		left: 72%;
 	}
 	.box-12 {
-		width: 5.3%;
-		height: 3.1%;
-		top: 37.1%;
-		left: 14%;
+		width: 6.3%;
+		height: 2.7%;
+		top: 37.6%;
+		left: 8%;
 	}
 	.box-5 {
-		width: 4.7%;
-		height: 3%;
-		top: 33%;
-		left: 37%;
-	}
-	.box-21 {
-		width: 4.2%;
+		width: 5.3%;
 		height: 2.8%;
 		top: 33.5%;
-		left: 58.5%;
+		left: 35%;
+	}
+	.box-21 {
+		width: 4.7%;
+		height: 2.5%;
+		top: 34%;
+		left: 60%;
 	}
 	.box-20 {
-		width: 9.5%;
+		width: 11.7%;
 		height: 5.7%;
-		bottom: 13.5%;
-		left: 34%;
+		bottom: 14.5%;
+		left: 31%;
 	}
 	.box-3 {
-		width: 4.5%;
-		height: 3%;
-		bottom: 11.7%;
-		left: 47.5%;
+		width: 4.9%;
+		height: 2.8%;
+		bottom: 13%;
+		left: 47%;
 	}
 	.box-8 {
-		width: 9%;
+		width: 10.5%;
 		height: 5.7%;
-		bottom: 13.1%;
-		right: 8.2%;
+		bottom: 14%;
+		right: 1.5%;
 	}
 }
