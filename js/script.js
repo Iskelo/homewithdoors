@@ -63,22 +63,30 @@ document.addEventListener("click", (event) => {
 
 function getDirection(index) {
   switch (index) {
-    case 0: return "Left";
-    case 1: return "Right";
-    case 2: return "Top";
-    case 3: return "Bottom";
-    case 4: return "Top";
-    case 5: return "Left";
-    case 6: return "Right";
-    case 7: return "Left";
-    case 8: return "Bottom";
-    case 9: return "Top";
-    case 10: return "Bottom";
-    case 11: return "Left";
-    case 12: return "Right";
-    case 13: return "Top";
-    case 14: return "Bottom";
-    case 15: return "Left";
+    case 0: return "Left"; //1
+    case 1: return "Right"; //11
+    case 2: return "Top"; //12
+    case 3: return "Bottom"; //5
+    case 4: return "Left"; //21
+    case 5: return "Top"; //20
+    case 6: return "Right"; //3
+    case 7: return "Left"; //8
+    case 8: return "Bottom"; //13
+    case 9: return "Top"; //18
+    case 10: return "Bottom"; //16
+    case 11: return "Left"; //19
+    case 12: return "Right";//4
+    case 13: return "Top";//10
+    case 14: return "Bottom";//14
+    case 15: return "Left";//7
+    case 16: return "Bottom";//9
+    case 17: return "Top";//22
+    case 18: return "Bottom";//17
+    case 19: return "Left";//15
+    case 20: return "Right";//6
+    case 21: return "Left";//23
+    case 22: return "Bottom";//2
+    case 23: return "Left";//24
     default: return "Right";
   }
 }
