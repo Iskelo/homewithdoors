@@ -34,18 +34,18 @@ function getDirection(index) {
     case 9: return "Top"; //18
     case 10: return "Bottom"; //16
     case 11: return "Left"; //19
-    case 12: return "Right";//4
-    case 13: return "Top";//10
-    case 14: return "Bottom";//14
-    case 15: return "Left";//7
-    case 16: return "Bottom";//9
-    case 17: return "Top";//22
-    case 18: return "Bottom";//17
-    case 19: return "Left";//15
-    case 20: return "Right";//6
-    case 21: return "Left";//23
-    case 22: return "Bottom";//2
-    case 23: return "Left";//24
+    case 12: return "Right"; //4
+    case 13: return "Top"; //10
+    case 14: return "Bottom"; //14
+    case 15: return "Left"; //7
+    case 16: return "Bottom"; //9
+    case 17: return "Top"; //22
+    case 18: return "Bottom"; //17
+    case 19: return "Left"; //15
+    case 20: return "Right"; //6
+    case 21: return "Left"; //23
+    case 22: return "Bottom"; //2
+    case 23: return "Left"; //24
     default: return "Right";
   }
 }
@@ -55,8 +55,4 @@ function closeAllDoors() {
     const direction = getDirection(index);
     element.classList.remove(`doorOpen${direction}`);
   });
-}
-
-function redirectToAnotherPage() {    
-    window.location.href = "../index.html";
 }

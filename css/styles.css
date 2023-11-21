@@ -27,7 +27,6 @@ body{
 	transform: translate(-50%, -50%);	
 	width: 58.6%;
 	height: 50%;
-	/* z-index: 1; */
 }
 
 .boxes {
@@ -37,8 +36,8 @@ body{
 	grid-column-gap: 0.5%;
 	grid-row-gap: 1.5%;
 	height: 100%;
-	/* z-index: 1; */
 }
+
 .box {
 	position: absolute;
 	cursor: pointer;
@@ -52,25 +51,26 @@ body{
 	z-index: 1;
 }
 
+/* GIFTS */
+.gift-box{
+	position: absolute;	
+	bottom: 2%;
+	left: 50%;
+	transform: translate(-50%);
+	width: 85%;
+}
+
 .doors{
 	position: relative;
 }
+
 .doors-13{
 	grid-area: 1 / 3 / 2 / 4;
 }
 .box-13 {	
 	background-image: url('../images/door-13.png');	
-	/* transform-origin: bottom; */
-	transform-origin: left;
-
-}
-
-/* GIFTS */
-.gift-box{
-	position: absolute;	
-	bottom: 0;
-	left: 5%;
-	width: 90%;
+	transform-origin: bottom;
+	z-index: 3;
 }
 
 .doors-18{
@@ -79,9 +79,7 @@ body{
 
 .box-18 {
 	background-image: url('../images/door-18.png');
-	transform-origin: right;
-z-index: 2;
-	
+	transform-origin: top;	
 }
 
 .doors-16{
@@ -90,72 +88,114 @@ z-index: 2;
 
 .box-16 {
 	background-image: url('../images/door-16.png');
-	transform-origin: top;	
+	transform-origin: bottom;	
+}
+
+.doors-19{
+	grid-area: 2 / 2 / 3 / 3;
 }
 .box-19 {
 	background-image: url('../images/door-19.png');
-	transform-origin: left;
-	grid-area: 2 / 2 / 3 / 3;
+	transform-origin: left;	
+}
+
+.doors-4{
+	grid-area: 2 / 3 / 3 / 4;
 }
 .box-4 {
 	background-image: url('../images/door-4.png');
 	transform-origin: right;
-	grid-area: 2 / 3 / 3 / 4;
+	z-index: 2;
+}
+
+.doors-10{
+	grid-area: 2 / 4 / 3 / 5;
 }
 .box-10 {
 	background-image: url('../images/door-10.png');
 	transform-origin: top;
-	grid-area: 2 / 4 / 3 / 5;
+}
+
+.doors-14{
+	grid-area: 2 / 6 / 3 / 7;
 }
 .box-14 {
 	background-image: url('../images/door-14.png');
 	transform-origin: bottom;
-	grid-area: 2 / 6 / 3 / 7;
+}
+
+.doors-7{
+	grid-area: 3 / 2 / 4 / 3;
 }
 .box-7 {
 	background-image: url('../images/door-7.png');
 	transform-origin: left;
-	grid-area: 3 / 2 / 4 / 3;
+}
+
+.doors-9{
+	grid-area: 3 / 5 / 4 / 6;
 }
 .box-9 {
 	background-image: url('../images/door-9.png');
 	transform-origin: bottom;
-	grid-area: 3 / 5 / 4 / 6;
+	z-index: 2;
+}
+
+.doors-22{
+	grid-area: 3 / 7 / 4 / 8;
 }
 .box-22 {
 	background-image: url('../images/door-22.png');
 	transform-origin: top;
-	grid-area: 3 / 7 / 4 / 8;
+}
+
+.doors-17{
+	grid-area: 4 / 1 / 5 / 2;
 }
 .box-17 {
 	background-image: url('../images/door-17.png');
 	transform-origin: bottom;
-	grid-area: 4 / 1 / 5 / 2;
+}
+
+.doors-15{
+	grid-area: 4 / 2 / 5 / 3;
 }
 .box-15 {
 	background-image: url('../images/door-15.png');
 	transform-origin: left;
-	grid-area: 4 / 2 / 5 / 3;
+}
+
+.doors-6{
+	grid-area: 4 / 3 / 5 / 4;
 }
 .box-6 {
 	background-image: url('../images/door-6.png');
 	transform-origin: right;
-	grid-area: 4 / 3 / 5 / 4;
+}
+
+.doors-23{
+	grid-area: 4 / 5 / 5 / 6;
 }
 .box-23 {
 	background-image: url('../images/door-23.png');
 	transform-origin: left;
-	grid-area: 4 / 5 / 5 / 6;
+}
+
+.doors-2{
+	grid-area: 4 / 6 / 5 / 7;
 }
 .box-2 {
 	background-image: url('../images/door-2.png');
 	transform-origin: bottom;
-	grid-area: 4 / 6 / 5 / 7;
+}
+
+.doors-24{
+	grid-area: 4 / 7 / 5 / 8;
 }
 .box-24 {
 	background-image: url('../images/door-24.png');
 	transform-origin: left;
-	grid-area: 4 / 7 / 5 / 8;
+
 }
 
 /* DOORS OTHER */
@@ -174,14 +214,11 @@ z-index: 2;
 	height: 5%;
 	top: 5.3%;
 	left: 35.5%;
-
 }
-
 .box-1 {
 	background-image: url('../images/door-1.png');
 	transform-origin: left;
 }
-
 
 .doors-11 {
 	position: absolute;
@@ -190,7 +227,6 @@ z-index: 2;
 	top: 12.2%;
 	left: 65.2%;
 }
-
 .box-11 {
 	background-image: url('../images/door-11.png');
 	transform-origin: right;
@@ -203,7 +239,6 @@ z-index: 2;
 	top: 26.1%;
 	left: 22.1%;
 }
-
 .box-12 {
 	background-image: url('../images/door-12.png');
 	transform-origin: top;
@@ -216,8 +251,6 @@ z-index: 2;
 	width: 3.5%;
 	height: 3.8%;
 }
-
-
 .box-5 {
 	background-image: url('../images/door-5.png');
 	transform-origin: bottom;
@@ -229,9 +262,7 @@ z-index: 2;
 	height: 3.7%;
 	top: 21.2%;
 	left: 57%;
-
 }
-
 .box-21 {
 	background-image: url('../images/door-21.png');
 	transform-origin: left;
@@ -244,7 +275,6 @@ z-index: 2;
 	bottom: 6.7%;
 	left: 38%;
 }
-
 .box-20 {
 	background-image: url('../images/door-20.png');
 	transform-origin: top;
@@ -257,7 +287,6 @@ z-index: 2;
 	bottom: 4.3%;
 	left: 48.7%;
 }
-
 .box-3 {
 	background-image: url('../images/door-3.png');
 	transform-origin: right;
@@ -270,7 +299,6 @@ z-index: 2;
 	bottom: 6.2%;
 	right: 16.9%;
 }
-
 .box-8 {
 	background-image: url('../images/door-8.png');
 	transform-origin: left;
@@ -327,49 +355,49 @@ z-index: 2;
 		width: 87.5%;
 		height: 35.5%;
 	}
-	.box-1 {
+	.doors-1 {
 		width: 7.5%;
 		height: 3.8%;
 		top: 22.5%;
 		left: 28.3%;
 	}
-	.box-11 {
+	.doors-11 {
 		width: 6.2%;
 		height: 4%;
 		top: 27.3%;
 		left: 72.5%;
 	}
-	.box-12 {
+	.doors-12 {
 		width: 6.5%;
 		height: 3.2%;
 		top: 37.1%;
 		left: 8.4%;
 	}
-	.box-5 {
+	.doors-5 {
 		width: 5.5%;
 		height: 2.8%;
 		top: 33.4%;
 		left: 35.5%;
 	}
-	.box-21 {
+	.doors-21 {
 		width: 4.9%;
 		height: 2.7%;
 		top: 33.8%;
 		left: 60.5%;
 	}
-	.box-20 {
+	.doors-20 {
 		width: 11.7%;
 		height: 5.7%;
 		bottom: 15%;
 		left: 32%;
 	}
-	.box-3 {
+	.doors-3 {
 		width: 4.9%;
 		height: 2.9%;
 		bottom: 13.3%;
 		left: 48%;
 	}
-	.box-8 {
+	.doors-8 {
 		width: 10.5%;
 		height: 5.7%;
 		bottom: 14.5%;
